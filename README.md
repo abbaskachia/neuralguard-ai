@@ -50,6 +50,14 @@ The goal is to help maintenance personnel identify equipment conditions that may
 - **Maintenance recommendations:** Receive suggestions based on sensor conditions.
 - **API integration:** React frontend communicates with a FastAPI backend.
 
+## 4. Application Screenshots
+
+### Dashboard
+![NeuralGuard AI Dashboard](docs/screenshots/dashboard.jpg)
+
+### Model Performance and Confusion Matrix
+![Model Evaluation](docs/screenshots/model-metrics.jpg)
+
 ## 4. Technology Stack
 
 | Component | Technology |
