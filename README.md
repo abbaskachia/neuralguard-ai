@@ -59,7 +59,7 @@ The goal is to help maintenance personnel identify equipment conditions that may
 ![Model Evaluation](docs/screenshots/model-metrics.jpg)
 
 ### Manual Prediction
-![Equipment Prediction](docs/screenshots/prediction.png)
+![Equipment Prediction](docs/screenshots/prediction.jpg)
 
 ## 4. Technology Stack
 
