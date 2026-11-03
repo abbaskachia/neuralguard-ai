@@ -58,6 +58,9 @@ The goal is to help maintenance personnel identify equipment conditions that may
 ### Model Performance and Confusion Matrix
 ![Model Evaluation](docs/screenshots/model-metrics.jpg)
 
+### Manual Prediction
+![Equipment Prediction](docs/screenshots/prediction.png)
+
 ## 4. Technology Stack
 
 | Component | Technology |
