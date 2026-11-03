@@ -50,6 +50,7 @@ The goal is to help maintenance personnel identify equipment conditions that may
 - **Maintenance recommendations:** Receive suggestions based on sensor conditions.
 - **API integration:** React frontend communicates with a FastAPI backend.
 
+
 ## 4. Application Screenshots
 
 ### Dashboard
@@ -60,8 +61,6 @@ The goal is to help maintenance personnel identify equipment conditions that may
 
 ### Manual Prediction
 ![Equipment Prediction](docs/screenshots/prediction.jpg)
-
-## 4. Technology Stack
 
 | Component | Technology |
 |---|---|
@@ -76,7 +75,25 @@ The goal is to help maintenance personnel identify equipment conditions that may
 | Data processing | Pandas, NumPy |
 | Model evaluation | Scikit-learn metrics |
 
-## 5. System Architecture
+
+
+## 5. Technology Stack
+
+| Component | Technology |
+|---|---|
+| Frontend | React |
+| Frontend tooling | Vite |
+| Charts | Recharts |
+| Icons | Lucide React |
+| Backend | Python |
+| API framework | FastAPI |
+| Machine learning | Scikit-learn |
+| ML algorithm | Random Forest Classifier |
+| Data processing | Pandas, NumPy |
+| Model evaluation | Scikit-learn metrics |
+
+
+## 6. System Architecture
 
 ```text
        INDUSTRIAL EQUIPMENT
@@ -118,7 +135,7 @@ The goal is to help maintenance personnel identify equipment conditions that may
        VISUAL MONITORING
 ```
 
-## 6. Machine Learning Model
+## 7. Machine Learning Model
 
 NeuralGuard AI uses a **Random Forest Classifier** to estimate potential equipment failure risk.
 
@@ -148,7 +165,7 @@ NeuralGuard AI uses a **Random Forest Classifier** to estimate potential equipme
 
 The dataset is synthetic and is used to demonstrate the predictive maintenance workflow.
 
-## 7. Model Evaluation Results
+## 8. Model Evaluation Results
 
 The model was evaluated using a stratified holdout test set of 1,000 synthetic records.
 
@@ -183,7 +200,7 @@ The model was evaluated using a stratified holdout test set of 1,000 synthetic r
 
 **Important limitation:** The model missed 102 of the 215 actual positive cases in the synthetic test set. Its recall was 52.56%. This means the current model is a prototype, not a validated industrial failure-detection system.
 
-## 8. Risk Classification
+## 9. Risk Classification
 
 The application uses the following risk-score thresholds:
 
@@ -200,7 +217,7 @@ The predicted class uses a separate 50% classification threshold:
 
 Therefore, a MEDIUM risk score can still have a predicted class of "No failure indicated". Risk category and predicted class describe different things.
 
-## 9. API Endpoints
+## 10. API Endpoints
 
 The backend exposes the following endpoints:
 
@@ -244,7 +261,7 @@ The prediction endpoint accepts equipment sensor readings:
 
 The response includes a risk score, risk level, predicted class, failure and no-failure scores, and maintenance recommendations.
 
-## 10. Installation and Setup
+## 11. Installation and Setup
 
 ### Prerequisites
 
@@ -257,12 +274,12 @@ Install the following:
 
 ### Clone the repository
 
-```bash
+
 git clone https://github.com/abbaskachia/neuralguard-ai.git
 cd neuralguard-ai
-```
 
-[Repl with the actual repository URL.](https://github.com/abbaskachia/neuralguard-ai.git)
+
+[GitHub Repository](https://github.com/abbaskachia/neuralguard-ai)
 
 ### Backend setup
 
@@ -330,7 +347,7 @@ Frontend address:
 
 Keep both backend and frontend terminals running while using the dashboard.
 
-## 11. Testing
+## 12. Testing
 
 The prototype has been manually tested for the following:
 
@@ -380,7 +397,7 @@ Observed result:
 
 These are demonstration results from the synthetic-data model, not confirmed real-world failure probabilities.
 
-## 12. Project Structure
+## 13. Project Structure
 
 ```text
 neuralguard-ai-ft03/
@@ -401,7 +418,7 @@ neuralguard-ai-ft03/
 
 The exact internal structure may contain additional files for model training, API routes, configuration, and frontend components.
 
-## 13. Future Improvements
+## 14. Future Improvements
 
 Planned improvements include:
 
@@ -416,7 +433,7 @@ Planned improvements include:
 - Deployment to a cloud environment.
 - Real-time monitoring through MQTT or WebSockets.
 
-## 14. Safety and Data Disclaimer
+## 15. Safety and Data Disclaimer
 
 NeuralGuard AI is an experimental predictive maintenance prototype.
 
@@ -428,7 +445,7 @@ NeuralGuard AI is an experimental predictive maintenance prototype.
 
 Real industrial deployment requires representative operational data, independent validation, equipment-specific calibration, and appropriate safety engineering.
 
-## 15. Hackathon Information
+## 16. Hackathon Information
 
 **Project:** NeuralGuard AI  
 **Event:** Neural Storm 2026  
@@ -440,3 +457,12 @@ NeuralGuard AI demonstrates how machine learning, sensor telemetry, and interact
 ---
 
 Built with Python, FastAPI, React, and Scikit-learn.
+
+## AI Development Tools Disclosure
+
+ChatGPT was used for technical guidance, debugging assistance,
+documentation, and presentation preparation during development.
+
+AI assistance supported the development process. The project
+author was responsible for reviewing, integrating, testing,
+and presenting the implementation.
